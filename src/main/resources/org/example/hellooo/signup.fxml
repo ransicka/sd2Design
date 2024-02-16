@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hellooo.Signup">
+   <children>
+      <Label layoutX="20.0" layoutY="42.0" text="Personal Details">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="19.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+         <children>
+            <Label text="First Name" />
+            <Label text="Last Name" />
+            <Label text="Age" />
+            <Label text="Birthday" />
+            <Label text="Gender" />
+            <Label text="Civil Status" />
+            <Label text="Country" />
+         </children>
+      </VBox>
+      <VBox layoutX="119.0" layoutY="100.0" prefHeight="200.0" prefWidth="126.0">
+         <children>
+            <TextField promptText="First name" />
+            <TextField promptText="Last name" />
+            <TextField promptText="Age in numerics" />
+            <TextField promptText="DD/MM/YYYY" />
+            <TextField promptText="Male/Female" />
+            <TextField promptText="Single/Married" />
+            <TextField promptText="Country" />
+         </children>
+      </VBox>
+      <Label layoutX="303.0" layoutY="42.0" text="Contact Details">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="303.0" layoutY="171.0" text="Login Details">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="308.0" layoutY="100.0" prefHeight="62.0" prefWidth="100.0" spacing="8.0">
+         <children>
+            <Label text="Email" />
+            <Label text="Mobile" />
+         </children>
+      </VBox>
+      <VBox layoutX="408.0" layoutY="100.0" prefHeight="62.0" prefWidth="126.0">
+         <children>
+            <TextField promptText="example@example.com" />
+            <TextField promptText="0712345678" />
+         </children>
+      </VBox>
+      <VBox layoutX="308.0" layoutY="212.0" prefHeight="98.0" prefWidth="100.0" spacing="8.0">
+         <children>
+            <Label text="Username" />
+            <Label text="Password" />
+            <Label text="Confirm Password" />
+         </children>
+      </VBox>
+      <VBox layoutX="408.0" layoutY="212.0" prefHeight="80.0" prefWidth="126.0">
+         <children>
+            <TextField promptText="username" />
+            <TextField promptText="password" />
+            <TextField promptText="re-enter password" />
+         </children>
+      </VBox>
+      <Button layoutX="303.0" layoutY="331.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

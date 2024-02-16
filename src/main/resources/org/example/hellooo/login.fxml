@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" prefHeight="248.0" prefWidth="289.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hellooo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Welcome">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="loginMsg" />
+
+                            <Label fx:id="welcomeText" />
+   <HBox>
+      <children>
+         <Label text="Username" />
+         <TextField id="username" fx:id="username" promptText="username" />
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Label text="Password" />
+         <PasswordField id="password" fx:id="password" promptText="password" />
+      </children>
+   </HBox>
+   <Button fx:id="login" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Log in" />
+</VBox>
